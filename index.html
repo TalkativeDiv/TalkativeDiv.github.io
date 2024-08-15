@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>redirecting to abhirath.net</title>
+    <script defer>
+      // check if website is up, if so redirect
+      fetch("https://abhirath.net").then(
+        async ({ text }) =>
+          (await text()) && (window.location.href = "https://abhirath.net")
+      );
+    </script>
+  </head>
+  <body>
+    <p>redirecting</p>
+  </body>
+</html>
